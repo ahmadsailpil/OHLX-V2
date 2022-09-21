@@ -60,7 +60,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ┗━━━━━━━━━━㉿ 
 ⫹⫺ 
 ⫹⫺`, 
-   footer: `┗ © FangzXD*`, 
+   footer: `┗ © OHLX XD*`, 
    title: "", 
    buttonText: "CLICK HERE", 
    sections 
@@ -87,7 +87,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
  ╭━━━━「 *BERHASIL* 」
  ❖ Terima kasih ${name} Sudah mendaftar
 Di Database kami
- ❖ © FANGZ BOT || ALL RESERVED
+ ❖ © OHLX BOT || ALL RESERVED
 
  ╭━━━━「 *DATA* 」
  ┊⫹ *Sucsess ☑️* 】Status

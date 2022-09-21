@@ -157,13 +157,13 @@ global.wm3 = '赤 OHLX - BOT'
 global.hiasan = '꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦ ͝ ꒷ ͝ ꒦'
 global.botdate = `🗓️️ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗪𝗔𝗞𝗧𝗨 : ${wib}`
-global.titlebot = '𝗬𝗧: OHLXXD' //Ganti serah lu
+global.titlebot = '𝗬𝗧: OHLX GT' //Ganti serah lu
 
 /*⫘⫘⫘⫘ LOGO ⫘⫘⫘⫘⫘*/
 // INI JUGA GANTI SETERAH MU
 global.logo = 'https://ibb.co/17RY7x9'
-global.thumb = 'https://telegra.ph/file/22abfec5e8c5b3e6596d1.jpg' //Thumbnail nya
-global.thumb2 = 'https://telegra.ph/file/312d5d7a5ad4d4f8b5d7a.jpg' //Thumbnail 2
+global.thumb = 'https://telegra.ph/file/90b471dc76bce814d31ab.jpg' //Thumbnail nya
+global.thumb2 = 'https://telegra.ph/file/90b471dc76bce814d31ab.jpg' //Thumbnail 2
 global.thumbbc = 'https://telegra.ph/file/3377bec81cd8614917d24.jpg' //Image Bcgcb
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 global.flaaa = [
@@ -476,7 +476,7 @@ global.fsizedoc = '99999999999999' // 10TB
 global.fpagedoc = '999' //Gausah di ganti.
 
 /*⫘⫘⫘⫘ BIO OWNER ⫘⫘⫘⫘⫘*/
-global.nameowner = 'OHLXXD'
+global.nameowner = 'OHLX'
 global.umurowner = '15'
 global.asalowner = 'Yogyakarta, Jawa tengah'
 global.nomorowner = 'wa.me/6288215689772'
@@ -512,7 +512,7 @@ global.fpagedoc = '1'.repeat(10)
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
 global.stickpack = 'YT: OHLX GT'
 global.stickauth = `© OHLX BOT\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
-global.packname = 'By OHLXXD'
+global.packname = 'By OHLX DEV'
 
 
 global.multiplier = 38 // The higher, The harder levelup
@@ -566,7 +566,7 @@ global.fpay = {
 	key: {
 		remoteJid: '0@s.whatsapp.net',
 		fromMe: false,
-		id: 'OHLXXD',
+		id: 'OHLXDEV',
 		participant: '0@s.whatsapp.net'
 	},
 	message: {
@@ -593,7 +593,7 @@ global.fpayment = (m) => {
 		key: {
 		remoteJid: '0@s.whatsapp.net',
 		fromMe: false,
-		id: 'OHLXXD',
+		id: 'OHLXDEV',
 		participant: '0@s.whatsapp.net'
 	},
 	message: {
@@ -603,7 +603,7 @@ global.fpayment = (m) => {
 			requestFrom: (m !== null && m !== undefined) ? m.sender : '0@s.whatsapp.net',
 			noteMessage: {
 				extendedTextMessage: {
-					text: (m !== null && m !== undefined) ? m.text : 'Subs YT: OHLXXD'
+					text: (m !== null && m !== undefined) ? m.text : 'Subs YT: OHLX GT'
 				}
 			},
 			expiryTimestamp: 999999999,

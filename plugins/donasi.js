@@ -10,7 +10,7 @@ let msg = await generateWAMessageFromContent(m.chat, { locationMessage: {
   degreesLongitude: 0,
   name: '𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘',
   address: 'Click Text berwarna Biru\n\nNge tensnenwkdn',
-  url: `https://saweria.co/asepbotz`,
+  url: `https://telegra.ph/file/1c55295c6bf604ed7d33d.jpg`,
   isLive: true,
   accuracyInMeters: 0,
   speedInMps: 0,

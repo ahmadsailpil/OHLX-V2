@@ -9,7 +9,7 @@ conn.sendMessage(m.chat, {
     index: 1,
     urlButton: {
       displayText: `Link`,
-      url: lhttps://chat.whatsapp.com/Bh4K4gbxB7FIh7TeXJ71S8'
+      url: 'https://chat.whatsapp.com/Bh4K4gbxB7FIh7TeXJ71S8'
     }
   }],
   footer: wm
