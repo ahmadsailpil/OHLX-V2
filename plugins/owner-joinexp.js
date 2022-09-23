@@ -25,10 +25,10 @@ let handler = async (m, { conn, text, usedPrefix, args, participants }) => {
   if (now < global.db.data.chats[res].expired) global.db.data.chats[res].expired += jumlahHari
   else global.db.data.chats[res].expired = now + jumlahHari
   if (e.length) await m.reply(`Sukses invite bot ke group\n\n${await conn.getName(res)}\n\nBot akan keluar secara otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`)
-  if (e.length) await conn.reply(res, `Ada @${anubot} Owner-ku Di Sini, Aku Mau Keluar Aja Dah, Takut Kena Marah.
+  if (e.length) await conn.reply(res, `Ada @${global.nameown} Owner-ku Di Sini, Aku Mau Keluar Aja Dah, Takut Kena Marah.
 @${conn.user.jid.split(`@`)[0]} akan keluar 5 detik lagi
 Bye😑
-Thanks dah invite Gua *${m.name}*`, fkonn, {
+Thanks dah invite Gua *${global.namebot}*`, fkonn, {
     mentions: d
      }).then(async () => {
      await delay(7000)
@@ -36,11 +36,11 @@ Thanks dah invite Gua *${m.name}*`, fkonn, {
      await conn.reply(res, `Tapi Boong 🤭`, 0)
      await conn.reply(owner[0]+'@s.whatsapp.net', `*INVITING!*\n\n@${m.sender.split('@')[0]} telah mengundang ${conn.user.name} ke grup\n\n${await conn.getName(res)}\n\n${res}\n\nPesan : ${args[0]}\n\nBot akan keluar otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`, null, {mentions: [m.sender]})
      })
-     if (!e.length) await conn.reply(owner[0]+'@s.whatsapp.net', `*INVITING!*\n\n@${m.sender.split('@')[0]} telah mengundang ${conn.user.name} ke grup\n\n${await conn.getName(res)}\n\n${res}\n\nPesan : ${args[0]}\n\nBot akan keluar otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`, null, {mentions: [m.sender]})
+     if (!e.length) await conn.reply(owner[0]+'@s.whatsapp.net', `*INVITING!*\n\n@${m.sender.split('@')[0]} telah mengundang ${global.namebot} ke grup\n\n${await conn.getName(res)}\n\n${res}\n\nPesan : ${args[0]}\n\nBot akan keluar otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`, null, {mentions: [m.sender]})
      if (!e.length) await m.reply(`Sukses invite bot ke group\n\n${await conn.getName(res)}\n\nBot akan keluar secara otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`).then(async () => {
      let mes = `Hello Everyone👋🏻
-*${conn.user.name}* adalah salah satu Bot WhatsApp Multi-Device yang di bangun dengan Node.js, *${conn.user.name}* Baru aja di invite oleh *${m.name}*
-Untuk menggunakan *${conn.user.name}* silahkan ketik
+*${global.namebot}* adalah salah satu Bot WhatsApp Multi-Device yang di bangun dengan Node.js, *${global.namebot}* Baru aja di invite oleh *${global.nameown}*
+Untuk menggunakan *${global.namebot}* silahkan ketik
 #menu
 @${conn.user.jid.split('@')[0]} akan keluar secara otomatis setelah *${msToDate(global.db.data.chats[res].expired - now)}*`
   await conn.sendButton(res, hiasan, mes, thumbJoin, [['OWNER', '.owner'], ['MENU', '.menu']], fkonn, {
@@ -52,9 +52,9 @@ Untuk menggunakan *${conn.user.name}* silahkan ketik
       throw `Bot Berhasil bergabung ke group`
       }
 }
-handler.help = ['joinexp <chat.whatsapp.com> <day>']
+handler.help = ['join <chat.whatsapp.com> <day>']
 handler.tags = ['owner']
-handler.command = /^joinexp$/i
+handler.command = /^join$/i
 
 handler.owner = true
 

@@ -13,38 +13,38 @@
 	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
 	{title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
 	{title: "📛 | Antitoxic", rowId: `${usedPrefix + command} antitoxic`},
-	{title: "❗ | Antilinkwa", rowId: `${usedPrefix + command} antilinkwa`}, 
-	{title: "❗ | AntilinkIg", rowId: `${usedPrefix + command} antilinkIg`}, 
-    {title: "❗ | AntilinkYt", rowId: `${usedPrefix + command} antilinkyt`}, 
-    {title: "❗ | AntilinkTik", rowId: `${usedPrefix + command} antilinktik`},
-	{title: "❗ | Antilinktel", rowId: `${usedPrefix + command} antilinktel`},
-	{title: "❗ | AntiSatir", rowId: `${usedPrefix + command} antisatir`},
-	{title: "❗ | Antispam", rowId: `${usedPrefix + command} antispam`},
-	{title: "❗ | AntiSticker", rowId: `${usedPrefix + command} antisticker`},
-	{title: "❗ | Antitoxic", rowId: `${usedPrefix + command} antitoxic`},
-	{title: "❗ | Antivirtex", rowId: `${usedPrefix + command} antivirtex`},
-	{title: "❗ | AutoPresence", rowId: `${usedPrefix + command} autopresence`},
-	{title: "❗ | Autoreply", rowId: `${usedPrefix + command} autoreply`},
-	{title: "❗ | Autosticker", rowId: `${usedPrefix + command} autosticker`},
-	{title: "❗ | AutoUpmine", rowId: `${usedPrefix + command} autoupmine`},
-	{title: "❗ | Autojoin", rowId: `${usedPrefix + command} autojoin`},
-	{title: "❗ | Autoupnews", rowId: `${usedPrefix + command} autoupnews`},
-	{title: "❗ | AutoVn", rowId: `${usedPrefix + command} autovn`},
-	{title: "❗ | bcjoin", rowId: `${usedPrefix + command} bcjoin`},
+	{title: "🌟 | Antilinkwa", rowId: `${usedPrefix + command} antilinkwa`}, 
+	{title: "🌟 | AntilinkIg", rowId: `${usedPrefix + command} antilinkIg`}, 
+    {title: "🌟 | AntilinkYt", rowId: `${usedPrefix + command} antilinkyt`}, 
+    {title: "🌟 | AntilinkTik", rowId: `${usedPrefix + command} antilinktik`},
+    {title: "🌟 | AntiHTTP", rowId: `${usedPrefix + command} antihatetepe`}, 
+    {title: "🌟 | Antilinkbitly", rowId: `${usedPrefix + command} antilinkbitly`},  {title: "🌟 | Antilinktel", rowId: `${usedPrefix + command} antilinktel`},
+	{title: "🌟 | AntiSatir", rowId: `${usedPrefix + command} antisatir`},
+	{title: "🌟 | Antispam", rowId: `${usedPrefix + command} antispam`},
+	{title: "🌟 | AntiSticker", rowId: `${usedPrefix + command} antisticker`},
+	{title: "🌟 | Antivirtex", rowId: `${usedPrefix + command} antivirtex`},
+	{title: "🌟 | AutoPresence", rowId: `${usedPrefix + command} autopresence`},
+	{title: "🌟 | Autoreply", rowId: `${usedPrefix + command} autoreply`},
+	{title: "🌟 | Autosticker", rowId: `${usedPrefix + command} autosticker`},
+	{title: "🌟 | AutoUpmine", rowId: `${usedPrefix + command} autoupmine`},
+	{title: "🌟 | Autojoin", rowId: `${usedPrefix + command} autojoin`},
+	{title: "🌟 | Autoupnews", rowId: `${usedPrefix + command} autoupnews`},
+	{title: "🎵 | AutoVn", rowId: `${usedPrefix + command} autovn`},
 	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
+	{title: "🌟 | bcjoin", rowId: `${usedPrefix + command} bcjoin`},
 	{title: "🔎 | Detect", rowId: `${usedPrefix + command} detect`},
 	{title: "📑 | Document", rowId: `${usedPrefix + command} document`},
 	{title: "👤 | WhiteListMyContact", rowId: `${usedPrefix + command} whitelistmycontact`},
-	{title: "❗ | Restrict", rowId: `${usedPrefix + command} restrict`},
+	{title: "🌟 | Restrict", rowId: `${usedPrefix + command} restrict`},
 	{title: "😐 | Nyimak", rowId: `${usedPrefix + command} nyimak`},
 	{title: "🤬 | Antibadword", rowId: `${usedPrefix + command} antibadword`},
-	{title: "❗ | Antispam", rowId: `${usedPrefix + command} antispam`}, 
 	{title: "💬 | PcOnly", rowId: `${usedPrefix + command} pconly`},
 	{title: "🏢 | GcOnly", rowId: `${usedPrefix + command} gconly`},
 	{title: "📷 | SwOnly", rowId: `${usedPrefix + command} swonly`},
-	{title: "❗ | freply", rowId: `${usedPrefix + command} freply`}, 
-	{title: "❗ | clear", rowId: `${usedPrefix + command} clear`}, 
-	{title: "❗ | Desc", rowId: `${usedPrefix + command} desc`},
+	{title: "🌟 | freply", rowId: `${usedPrefix + command} freply`}, 
+	{title: "🚮 | clear", rowId: `${usedPrefix + command} clear`}, 
+	{title: "🌟 | Desc", rowId: `${usedPrefix + command} desc`},
+	{title: "📩 | Getmsg", rowId: `${usedPrefix + command} getmsg`}, 
 	]
     },
 ]
@@ -114,6 +114,16 @@ const listMessage = {
       }
       bot.clear = isEnable
       break
+          case 'viewonce':
+    case 'antiviewonce':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.viewonce = isEnable
+      break
     case 'desc':
       if (!m.isGroup) {
         if (!isOwner) {
@@ -172,6 +182,15 @@ const listMessage = {
         }
       }
       chat.antiLink = isEnable
+      break
+    case 'antilinkbitly':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiLinkBitly = isEnable
       break
       case 'antilinktik':
       if (m.isGroup) {
@@ -421,6 +440,12 @@ const listMessage = {
         throw false
       }
       global.opts['gconly'] = isEnable
+      break
+    case 'getmsg':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) return dfail('admin', m, conn)
+      }
+      chat.getmsg = isEnable
       break
     case 'swonly':
     case 'statusonly':

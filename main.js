@@ -85,7 +85,7 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'fangz'}.data.json`
+global.authFile = `${opts._[0] || 'session'}.data.json`
 const { state, saveState } = useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
@@ -146,7 +146,7 @@ const hehe = async (jid, options) => {
         }
       }
     }
-    const txt = `\n[ ✅ ] Hallo Owner @${jid.split`@`[0]}, Saya berhasil tersambung ke script mu...\n\n\n📑Sumber Script:\nhttps://tinyurl.com/2apdztcj`
+    const txt = `\n[ ✅ ] Hallo Owner @${jid.split`@`[0]}, Saya berhasil tersambung ke script mu...\n\n\n📑Sumber Script:\nhttps://xnxx.com`
     return await conn.sendMessage(jid, { text: txt, mentions: [jid], ...options }, { quoted: fkontak, ephemeralExpiration: 86400, ...options })
   }
 }
