@@ -12,10 +12,13 @@ let pn = '10'
 let pp = '25'
 let pv = '35'
 let ppm = '35'
+//jasa run
+let ri = '25'
+let pk = '30'
 let info = `
 ╭━━━━「 *SEWA* 」
 ┊⫹⫺ *Hemat:* _${sh}k/grup (15 Hari)_
-┊⫹⫺ *Normal:* _${sn}k/grup (1 bulan)_                                          
+┊⫹⫺ *Normal:* _${sn}k/grup (1 bulan)_                                         
 ┊⫹⫺ *permanen:* = _${sv}k/grup (unlimited)_
 ╰═┅═━––––––๑
 
@@ -23,6 +26,10 @@ let info = `
 ┊⫹⫺ *Hemat:* _${ph}k (15 Hari)_
 ┊⫹⫺ *Normal:* _${pn}k (1 bulan)_                                       
 ┊⫹⫺ *Permanent:* = _${ppm}k (Unlimited)_
+╰═┅═━––––––๑
+╭━━━━「 *JASARUN* 」
+┊⫹⫺ *Hemat:* _${ri}k (15 Hari)_
+┊⫹⫺ *Normal:* _${pk}k (1 bulan)_                                       
 ╰═┅═━––––––๑
 ༅ _*FITUR BOT*
 
@@ -66,6 +73,12 @@ const sections = [
 	    {title: "🌟 HEMAT", rowId: '.order *Paket:* 5K • Premium', description: 'PRICE: ' + ph + 'k (15 Hari)' },
 	    {title: "🌟 NORMAL", rowId: '.order *Paket:* 10K • Premium', description: 'PRICE: ' + pn + 'k (1 bulan)' },
 	{title: "🌟 PERMANENT", rowId: '.order *Paket:* 35K • Premium', description: 'PRICE: ' + ppm + 'k (UNLIMITED)' },
+	]
+    }, {
+        title: `${htjava} JASA RUN ✦-------`,
+	rows: [
+	    {title: "🌟 HEMAT", rowId: '.order *Paket:* 25K • Premium', description: 'PRICE: ' + ri + 'k (25 Hari)' },
+	    {title: "🌟 NORMAL", rowId: '.order *Paket:* 30K • Premium', description: 'PRICE: ' + pk + 'k (1 bulan)' },
 	]
     },
 ]
